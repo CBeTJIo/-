@@ -1,0 +1,13 @@
+{
+  "name": "character-game",
+  "version": "1.0.0",
+  "description": "Character class hierarchy game",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "jest",
+    "test:coverage": "jest --coverage --collectCoverageFrom=src/Character.js"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}
