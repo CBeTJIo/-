@@ -1,5 +1,5 @@
 class Character {
-  constructor(name, type) {
+  constructor(name, type, attack, defence) {
     if (typeof name !== 'string' || name.length < 2 || name.length > 10) {
       throw new Error('Имя должно быть строкой от 2 до 10 символов');
     }
@@ -13,24 +13,8 @@ class Character {
     this.type = type;
     this.health = 100;
     this.level = 1;
-
-    switch (type) {
-      case 'Bowman':
-      case 'Undead':
-        this.attack = 25;
-        this.defence = 25;
-        break;
-      case 'Swordsman':
-      case 'Zombie':
-        this.attack = 40;
-        this.defence = 10;
-        break;
-      case 'Magician':
-      case 'Daemon':
-        this.attack = 10;
-        this.defence = 40;
-        break;
-    }
+    this.attack = attack;
+    this.defence = defence;
   }
 
   levelUp() {
@@ -54,48 +38,4 @@ class Character {
   }
 }
 
-class Bowman extends Character {
-  constructor(name) {
-    super(name, 'Bowman');
-  }
-}
-
-class Swordsman extends Character {
-  constructor(name) {
-    super(name, 'Swordsman');
-  }
-}
-
-class Magician extends Character {
-  constructor(name) {
-    super(name, 'Magician');
-  }
-}
-
-class Daemon extends Character {
-  constructor(name) {
-    super(name, 'Daemon');
-  }
-}
-
-class Undead extends Character {
-  constructor(name) {
-    super(name, 'Undead');
-  }
-}
-
-class Zombie extends Character {
-  constructor(name) {
-    super(name, 'Zombie');
-  }
-}
-
-module.exports = {
-  Character,
-  Bowman,
-  Swordsman,
-  Magician,
-  Daemon,
-  Undead,
-  Zombie
-};
+module.exports = Character;
