@@ -1,4 +1,4 @@
-const Undead = require('../src/Undead.js');
+import Undead from '../src/Undead.js';
 
 describe('Undead class', () => {
   test('should create Undead with correct stats', () => {

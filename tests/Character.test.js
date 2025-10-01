@@ -1,4 +1,4 @@
-const Character = require('../src/Character.js');
+import Character from '../src/Character.js';
 
 describe('Character class', () => {
   test('should create character with valid parameters', () => {

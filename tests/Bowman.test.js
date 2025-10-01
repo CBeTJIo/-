@@ -1,4 +1,4 @@
-const Bowman = require('../src/Bowman.js');
+import Bowman from '../src/Bowman.js';
 
 describe('Bowman class', () => {
   test('should create Bowman with correct stats', () => {

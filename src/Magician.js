@@ -1,9 +1,7 @@
-const Character = require('./Character.js');
+import Character from './Character.js';
 
-class Magician extends Character {
+export default class Magician extends Character {
   constructor(name) {
     super(name, 'Magician', 10, 40);
   }
 }
-
-module.exports = Magician;

@@ -1,4 +1,4 @@
-const Swordsman = require('../src/Swordsman.js');
+import Swordsman from '../src/Swordsman.js';
 
 describe('Swordsman class', () => {
   test('should create Swordsman with correct stats', () => {

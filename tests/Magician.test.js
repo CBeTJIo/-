@@ -1,4 +1,4 @@
-const Magician = require('../src/Magician.js');
+import Magician from '../src/Magician.js';
 
 describe('Magician class', () => {
   test('should create Magician with correct stats', () => {

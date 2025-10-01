@@ -1,4 +1,4 @@
-class Character {
+export default class Character {
   constructor(name, type, attack, defence) {
     if (typeof name !== 'string' || name.length < 2 || name.length > 10) {
       throw new Error('Имя должно быть строкой от 2 до 10 символов');
@@ -37,5 +37,3 @@ class Character {
     this.health = Math.max(0, this.health - damageTaken);
   }
 }
-
-module.exports = Character;

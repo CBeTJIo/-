@@ -1,4 +1,4 @@
-const Zombie = require('../src/Zombie.js');
+import Zombie from '../src/Zombie.js';
 
 describe('Zombie class', () => {
   test('should create Zombie with correct stats', () => {

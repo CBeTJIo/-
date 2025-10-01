@@ -1,11 +1,11 @@
-const Bowman = require('./Bowman.js');
-const Swordsman = require('./Swordsman.js');
-const Magician = require('./Magician.js');
-const Daemon = require('./Daemon.js');
-const Undead = require('./Undead.js');
-const Zombie = require('./Zombie.js');
+import Bowman from './Bowman.js';
+import Swordsman from './Swordsman.js';
+import Magician from './Magician.js';
+import Daemon from './Daemon.js';
+import Undead from './Undead.js';
+import Zombie from './Zombie.js';
 
-module.exports = {
+export {
   Bowman,
   Swordsman,
   Magician,

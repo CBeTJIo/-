@@ -1,4 +1,4 @@
-const Daemon = require('../src/Daemon.js');
+import Daemon from '../src/Daemon.js';
 
 describe('Daemon class', () => {
   test('should create Daemon with correct stats', () => {
